@@ -23,23 +23,23 @@ test_requirements = [
 ]
 
 setup(
-    name='k-center-problem',
+    name='k_center',
     version='0.1.0',
-    description="Python implementation of k-center-problem using Farthest-first traversal.",
+    description="Python implementation of k_center using Farthest-first traversal.",
     long_description=readme + '\n\n' + history,
     author="k_center",
     author_email='mail@pythonic.ninja',
-    url='https://github.com/PythonicNinja/k-center-problem',
+    url='https://github.com/PythonicNinja/k_center',
     packages=[
-        'k-center-problem',
+        'k_center',
     ],
-    package_dir={'k-center-problem':
-                 'k-center-problem'},
+    package_dir={'k_center':
+                 'k_center'},
     include_package_data=True,
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    keywords='k-center-problem',
+    keywords='k_center',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

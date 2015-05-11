@@ -5,7 +5,7 @@
 test_k-center-problem
 ----------------------------------
 
-Tests for `k-center-problem` module.
+Tests for `k_center` module.
 """
 
 import unittest

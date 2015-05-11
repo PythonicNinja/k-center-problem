@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# k-center-problem documentation build configuration file, created by
+# k_center documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul  9 22:26:36 2013.
 #
 # This file is execfile()d with the current directory set to its
@@ -208,7 +208,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass
 # [howto/manual]).
 latex_documents = [
-    ('index', 'k-center-problem.tex',
+    ('index', 'k_center.tex',
      u'k_center Documentation',
      u'k_center', 'manual'),
 ]
@@ -239,7 +239,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'k-center-problem',
+    ('index', 'k_center',
      u'k_center Documentation',
      [u'k_center'], 1)
 ]
@@ -254,10 +254,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'k-center-problem',
+    ('index', 'k_center',
      u'k_center Documentation',
      u'k_center',
-     'k-center-problem',
+     'k_center',
      'One line description of project.',
      'Miscellaneous'),
 ]
