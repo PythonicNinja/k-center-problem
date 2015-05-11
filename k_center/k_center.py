@@ -7,7 +7,6 @@ from collections import namedtuple
 
 from helpers.point import Point
 
-
 PointWihDist = namedtuple('PointWithDist', ['x', 'y', 'dist'], verbose=False)
 
 
@@ -27,8 +26,7 @@ class KCenter(object):
         else:
             s = start_location
         locations = [s]
-
-        for i in range(2, k+2):
+        for i in range(2, k+1):
             min_distance = []
             for point in self.points:
                 distances = []
@@ -38,6 +36,9 @@ class KCenter(object):
                 if distances:
                     min_distance.append(min(distances, key=lambda point_with_dist: point_with_dist.dist))
             locations.append(max(min_distance,  key=lambda point_with_dist: point_with_dist.dist))
+
+            if i == 2:
+                locations[0] = PointWihDist(locations[0].x, locations[0].y, locations[0].dist(locations[1]))
 
         return locations
 
